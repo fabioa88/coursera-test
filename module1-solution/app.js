@@ -14,24 +14,24 @@
         switch(true) {
           case (numItems >= 1 && numItems < 4):
               $scope.message = "Enjoy!";
-              $scope.cssClassBorderColorGreen = "1";
-              $scope.cssClassBorderColorRed = "";
-              $scope.cssClassMessageRed = "";
-              $scope.cssClassMessageGreen = "1";
+              $scope.cssClassBorderColorGreen = 1;
+              $scope.cssClassBorderColorRed = 0;
+              $scope.cssClassMessageRed = 0;
+              $scope.cssClassMessageGreen = 1;
               break;
           case numItems > 3:
               $scope.message = "Too much!";
-              $scope.cssClassBorderColorGreen = "1";
-              $scope.cssClassBorderColorRed = "";
-              $scope.cssClassMessageRed = "";
-              $scope.cssClassMessageGreen = "1";
+              $scope.cssClassBorderColorGreen = 1;
+              $scope.cssClassBorderColorRed = 0;
+              $scope.cssClassMessageRed = 0;
+              $scope.cssClassMessageGreen = 1;
               break;
           default:
               $scope.message = "Please enter data first";
-              $scope.cssClassBorderColorGreen = "";
-              $scope.cssClassBorderColorRed = "1";
-              $scope.cssClassMessageGreen = "";
-              $scope.cssClassMessageRed = "1";
+              $scope.cssClassBorderColorGreen = 0;
+              $scope.cssClassBorderColorRed = 1;
+              $scope.cssClassMessageGreen = 0;
+              $scope.cssClassMessageRed = 1;
         }
       };
 
