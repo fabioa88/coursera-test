@@ -8,7 +8,6 @@
 
     function LunchCheckController($scope) {
 
-
       $scope.checkIfTooMuch = function () {
         var numItems = calculateNumMenuItems($scope.lunch_menu);
 
@@ -33,7 +32,7 @@
               $scope.cssClassBorderColorRed = "1";
               $scope.cssClassMessageGreen = "";
               $scope.cssClassMessageRed = "1";
-      }
+        }
       };
 
       function calculateNumMenuItems(lunch_menu) {
@@ -46,14 +45,9 @@
             if (!!array[i].trim())
               numItems += 1;
           }
-
           return numItems;
         }
         else return 0;
       };
-
-
-
     };
-
 })();
