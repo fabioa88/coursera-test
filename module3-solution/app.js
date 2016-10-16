@@ -49,7 +49,7 @@ function NarrowItDownController(MenuSearchService) {
 
     promise.then(function (response) {
       list.found = response;
-      if (!list.found)
+      if (!list.found || list.found.length == 0)
         list.emptyError = "Nothing found";
     })
     .catch(function (error) {
