@@ -49,6 +49,8 @@ function NarrowItDownController(MenuSearchService) {
 
     promise.then(function (response) {
       list.found = response;
+      if (!list.found)
+        list.emptyError = "Nothing found";
     })
     .catch(function (error) {
       console.log("Something went terribly wrong.");
