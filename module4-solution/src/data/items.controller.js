@@ -5,8 +5,8 @@ angular.module('Data')
 .controller('ItemsController', ItemsController);
 
 // 'item' is injected through state's resolve
-ItemsController.$inject = ['MenuDataService', 'items']
-function ItemsController(MenuDataService, items) {
+ItemsController.$inject = ['items']
+function ItemsController(items) {
   var itemsCtrl = this;
   itemsCtrl.items = items;
 }
